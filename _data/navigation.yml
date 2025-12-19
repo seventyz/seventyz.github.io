@@ -1,6 +1,9 @@
 - name: Home
   link: /
+  image: /assets/images/computer.png
 - name: About
   link: /about.html
+  image: /assets/images/help.png
 - name: Blog
   link: /blog.html
+  image: /assets/images/notepad.png

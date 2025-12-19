@@ -2,7 +2,8 @@
   {% for item in site.data.navigation %}
    <li> 
         <a href="{{ item.link }}" {% if page.url == item.link %}{% endif %}>
-        {{ item.name }}
+        {{ item.name }} 
+        <img class="image_nav" src={{ item.image }} alt="">
         </a>
     </li>
   {% endfor %}

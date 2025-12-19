@@ -1,8 +1,9 @@
 /* Body */
 body {
   background-color: black;
+  background: url("/assets/images/bg_windows_7.jpg") top center/1920px 1020px no-repeat fixed padding-box content-box;
   color: white;
-  font: normal normal normal medium/normal "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font: normal normal normal medium/normal "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Navigation bar */
@@ -13,17 +14,29 @@ body {
   width: 200px;
 }
 
-.navigation li a {
+.navigation li {
   display: flex;
   flex-flow: column;
+}
+
+.navigation li a {
   color: white;
+  display: flex;
+  flex-flow: column-reverse;
+  align-items: center;
+  justify-content: space-evenly;
   padding: 12px 12px;
   text-decoration: none;
+  font-size: 24px;
 }
 
 .navigation li a:hover {
   background-color: rgb(35, 35, 35);
   color: white;
+}
+
+.image_nav {
+  width: 30px;
 }
 
 /* Header and Footer*/
