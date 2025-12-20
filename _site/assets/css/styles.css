@@ -1,7 +1,6 @@
 /* Body */
 body {
-  background-color: black;
-  background: url("/assets/images/bg_windows_7.jpg") top center/1920px 1020px no-repeat fixed padding-box content-box;
+  background: url("/assets/images/bg_windows_7.jpg") top center/contain no-repeat fixed padding-box content-box, rgb(0, 0, 0) top center/cover no-repeat fixed padding-box content-box;
   color: white;
   font: normal normal normal medium/normal "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
