@@ -1,6 +1,6 @@
 /* Body */
 body {
-  background: url("/assets/images/bg_windows_7.jpg") top center/auto auto no-repeat fixed padding-box content-box, rgb(0, 0, 0) top center/cover no-repeat fixed padding-box content-box;
+  background: url("/assets/images/bg_windows_7.jpg") top center/100% 100% no-repeat fixed padding-box content-box, rgb(0, 0, 0) top center/cover no-repeat fixed padding-box content-box;
   color: white;
   font: normal normal normal medium/normal "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
@@ -15,7 +15,8 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 200px;
+  min-width: 200px;
+  max-width: 200px;
 }
 
 .navigation li {
