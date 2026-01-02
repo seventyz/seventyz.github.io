@@ -1,4 +1,97 @@
 
+/* Laptops */
+@media screen 
+  and (min-device-width: 1200px) { 
+ /* Navigation bar */
+    .navigation {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        min-width: 200px;
+        max-width: 200px;
+    }
+    .navigation li {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .navigation li a {
+        color: white;
+        display: flex;
+        flex-flow: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 12px 12px;
+        text-decoration: none;
+        font-size: 24px;
+    }
+    .image_nav {
+        width: 30px;
+    }
+        /* Main Content */
+/* Orgainze nav and content */
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        max-width: 1920px;
+        min-width: none;
+        width: 100%;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 75vh;
+    }
+
+
+}
+
+/* Phones */
+@media screen
+    and (max-device-width: 600px) {
+    /* Main */
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+        min-width: none;
+        width: 100%;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 50vh;
+        padding-left: 1em;
+    }
+    /* Navigation bar */
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .navigation li a {
+        color: white;
+        display: flex;
+        flex-flow: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 12px 12px;
+        text-decoration: none;
+        font-size: 2em;
+    }
+    .image_nav {
+        max-width: 7em;
+    }   
+    
+}
+
+
+/* General settings */
 /* Body */
 body {
     
@@ -15,47 +108,13 @@ body {
     padding-box
     content-box;
     color: white;
-    font: normal normal normal medium/normal 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font: normal normal normal 1em/normal 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
-
-/* Navigation bar */
-
-.navigation {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  min-width: 200px;
-  max-width: 200px;
-}
-.navigation li {
-  display: flex;
-  flex-flow: column;
-}
-
-.navigation li a {
-    color: white;
-    display: flex;
-    flex-flow: column-reverse;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 12px 12px;
-    text-decoration: none;
-    font-size: 24px;
-}
-
-.navigation li a:hover {
-    background-color: rgb(35, 35, 35);
-    color: white;
-}
-.image_nav {
-    width: 30px;
-}
-
 
 /* Header and Footer*/
 
@@ -64,27 +123,14 @@ header {
     padding: 10px;
 }
 
+.blinkys {
+    height: auto;
+    width: auto;
+}
+
 footer {
     padding: 10px;
     text-align: center;
     bottom: 0;
     left: 0;
-}
-
-/* Main Content */
-/* Orgainze nav and content */
-
-.main {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    max-width: 1920px;
-    min-width: none;
-    width: 100%;
-}
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 75vh;
 }
