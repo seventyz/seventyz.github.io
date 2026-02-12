@@ -1,9 +1,13 @@
 <!doctype html>
 <html>
+  
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="/assets/js/jquery-4.0.0.min.js"></script>
+    <script src="/assets/js/start.js"></script>
+
   </head>
   <body>
     {% include header.html %}
@@ -13,6 +17,11 @@
             {{ content }}
         </div>
     </div>
+    <div id="stupider">
+     <img id="stupid" class="start_menu" src="/assets/images/Windows 7 Large_1.png" width="64" height="64">
+     <img id="2" class="start_menu_other" src="/assets/images/Windows 7 Large_3.png" width="64" height="64">
+     <img id="3" class="start_menu_other" src="/assets/images/Windows 7 Large_2.png" width="64" height="64">
+     </div>
     {% include footer.html %}
   </body>
 </html>

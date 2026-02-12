@@ -1,0 +1,138 @@
+/* Laptops */
+@media screen and (min-device-width: 800px) {
+  /* Navigation bar */
+  .navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 200px;
+    max-width: 200px;
+  }
+  .navigation li {
+    display: flex;
+    flex-flow: column;
+  }
+  .navigation li a {
+    color: white;
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 12px 12px;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  .image_nav {
+    width: 30px;
+  }
+  /* Main Content */
+  /* Orgainze nav and content */
+  .main {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    max-width: 1920px;
+    min-width: none;
+    width: 100%;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 75vh;
+  }
+}
+/* Phones */
+@media screen and (max-device-width: 600px) {
+  /* Main */
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    min-width: none;
+    width: 100%;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 50vh;
+    padding-left: 1em;
+  }
+  /* Navigation bar */
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .navigation li a {
+    color: white;
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 12px 12px;
+    text-decoration: none;
+    font-size: 2em;
+  }
+  .image_nav {
+    max-width: 7em;
+  }
+}
+/* General settings */
+/* Body */
+body {
+  background: url("/assets/images/bg_windows_7.jpg") top center/1920px 1020px no-repeat fixed padding-box content-box, url("/assets/images/repeat_bg_2.png") top center/128px 128px repeat fixed padding-box content-box;
+  color: white;
+  font: normal normal normal 9px/normal "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Header and Footer*/
+header {
+  text-align: center;
+  padding: 10px;
+}
+
+.blinkys {
+  height: auto;
+  width: auto;
+}
+
+footer {
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  background-image: linear-gradient(to right, rgba(231, 231, 231, 0.4), rgba(161, 211, 254, 0.4), rgba(141, 141, 141, 0.4));
+  width: 100vw;
+  height: 48px;
+  border-top-style: outset;
+  border-width: 1px;
+  border-color: rgb(0, 0, 0);
+  z-index: -1;
+}
+
+.start_menu {
+  bottom: -8px;
+  left: -5px;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+}
+
+.start_menu_other {
+  bottom: -8px;
+  left: -5px;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
